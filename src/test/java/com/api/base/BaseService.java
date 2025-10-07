@@ -15,7 +15,7 @@ public class BaseService {
     }
 
     protected Response postRequest(Object payload, String endpoint){
-        System.out.println(requestSpecification.contentType(ContentType.JSON).header("x-api-key","reqres-free-v1").body(payload).post(endpoint).asPrettyString());
+        //System.out.println(requestSpecification.contentType(ContentType.JSON).header("x-api-key","reqres-free-v1").body(payload).post(endpoint).asPrettyString());
         return requestSpecification.contentType(ContentType.JSON).header("x-api-key","reqres-free-v1").body(payload).post(endpoint);
     }
 }
